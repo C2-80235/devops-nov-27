@@ -29,7 +29,7 @@ pipeline {
         }
         stage ('start docker service') {
             steps {
-                sh '/usr/bin/docker service create --name exam-service -p 9876:80 --replicas 5 shnk/exam-image'
+                sh '/usr/bin/docker service create --name exam-service -p 9877:80 --replicas 5 shnk/exam-image'
             }
         }
     }
